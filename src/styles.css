@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+indigo-pink
+deeppurple-amber
+purple-green
+pink-bluegrey
+*/
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+body {
+    margin: 0;
+    background-color:white;
+    padding: 0;
+}
