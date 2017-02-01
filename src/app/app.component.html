@@ -1,3 +1,64 @@
 <md-toolbar color="primary">
   <span>Materials Demo</span>
+  <span class="spacer"></span>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+      <md-icon>more_vert</md-icon>
+  </button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item>
+        <md-icon>fingerprint</md-icon>
+        <span>Login</span>
+      </button>
+    <button md-menu-item>
+        <md-icon>announcement</md-icon>
+        <span>Issues</span>
+      </button>
+    <button md-menu-item>
+        <md-icon>notifications_off</md-icon>
+        <span>Disable alerts</span>
+      </button>
+  </md-menu>
 </md-toolbar>
+<!--<md-tab-group>
+  <md-tab label="Gallery">
+    <md-card *ngFor="let gs of galleryScreen; let i = index">
+      <div id="page-padding">
+        <img class="card-image" src="{{ gs.img }}" alt="{{ gs.img }}" md-card-image>
+        <md-card-content>
+          <p>{{ gs.description }}</p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button (click)="likeMe(i)">
+          <i class="material-icons md-18" [class.red-color]="gs.liked == '1'">favorite</i> Like
+        </button>
+          <button md-button (click)="deleteMe(i)">
+          <i class="material-icons md-18">delete</i> Delete
+        </button>
+        </md-card-actions>
+      </div>
+    </md-card>
+  </md-tab>
+  <md-tab label="Settings">
+    <div id="page-padding">
+      <h1>Settings</h1>
+      <p>Here you can control the various settings associated with your app. There's no need to hit a save button, as the values
+        are updated automatically.</p>
+      <label>Number of Thumbnails</label>
+      <md-slider showTicks="true" max="100" min="0" step="1" thumbLabel="true" value="40"></md-slider>
+      <md-slide-toggle>Set Settings</md-slide-toggle>
+    </div>
+  </md-tab>
+</md-tab-group>-->
+<md-toolbar id="subheader">SubMenu</md-toolbar>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    Jolly good!
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+
+</md-sidenav-container>

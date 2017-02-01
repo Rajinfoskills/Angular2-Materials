@@ -1,10 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/*
-indigo-pink
-deeppurple-amber
-purple-green
-pink-bluegrey
-*/
 
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 
@@ -12,4 +6,74 @@ body {
     margin: 0;
     background-color:white;
     padding: 0;
+}
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.card-image {
+    width: 100%;
+    padding: 0;
+}
+
+.red-color {
+    color:red;
+}
+
+#page-padding {
+    padding: 1.5em;
+}
+
+.md-slider-horizontal {
+    width:100%;
+}
+
+label {
+    font-weight:bold;
+    margin:1.5em 0;
+    display:block;
+}
+
+#subheader {
+    
+}
+
+.example-container {
+  width: 500px;
+  height: 300px;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height:5px;
+	padding-right:5px;
+} 
+::-webkit-scrollbar-track {
+	  background-color: #DDD;
+} 
+ 
+::-webkit-scrollbar-thumb {
+	  background-color: #666; 
+}
+ 
+::-webkit-scrollbar-button {
+	  height:0px;
+} 
+ 
+::-webkit-scrollbar-corner {
+	  background-color: black;
 }
